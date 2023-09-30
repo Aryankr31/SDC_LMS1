@@ -1,0 +1,58 @@
+body {
+    background-color: burlywood;
+} 
+
+.heading {
+    width: 100%;
+    display: flex;
+    justify-content: left;
+}   
+
+.d-flex {
+    display: flex;
+    margin-left: auto;
+    margin-right: 20px; 
+}
+
+.submit {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+} 
+ 
+.formContainer{
+    display: flex;
+    justify-content: space-evenly;
+}
+.tableContainer{
+    width: 85%;
+    margin-left: 8%;
+    margin-right: 8%;
+}
+
+.navbar-brand{
+ margin:1%;
+ width:100%;
+ display: flex;
+ justify-content: left;; 
+}
+
+.titleHeading{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.barsearch{
+    width: 25%;
+    display: flex;
+    justify-content: left;
+}
+
+.btnd{
+    width: 25%;
+}
+
+.navbar-brand{
+    font-size: 36px;
+}

@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Bootstrap CSS -->
+  <title>S D C</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.rtl.min.css"
+    integrity="sha384-nU14brUcp6StFntEOOEBvcJm4huWjB0OcIeQ3fltAfSmuZFrkAif0T+UtNGlKKQv" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<ul></ul>
+<body>
+  <!-- Navbar-->
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid navbar-xxlarge">
+      <a class="navbar-brand" href="#"> SDC LIBRARY MANAGEMENT SYSTEM</a>
+      <form id="search-form" class="barsearch my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search Books" aria-label="Search" id="search-input">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+      </form>
+    </div>
+  </nav>
+
+  <!--Bookform-->
+  <div class="container my-3">
+    <div class="addBookForm">
+      <div class="titleHeading">
+        <h1>ADD BOOKS</h1>
+      </div>
+      <form id="add-book-form">
+        <div class="row g-2">
+          <div class="col-md-6">
+            <label for="title" class="form-label">Name Of Book</label>
+            <input type="text" class="form-control" id="title">
+          </div>
+          <input type="hidden" id="book-id">
+          <div class="col-md-6">
+            <label for="author" class="form-label">Author</label>
+            <input type="text" class="form-control" id="author">
+          </div>
+          <div class="col-12">
+            <label for="name" class="form-label">Issued By</label>
+            <input type="text" class="form-control" id="name" placeholder="Enter Your Name">
+          </div>
+          <div class="col-12">
+            <label for="price" class="form-label">Price</label>
+            <input type="text" class="form-control" id="price" placeholder="Enter the Price($,₹)">
+          </div>
+          <div class="col-md-6">
+            <label for="date" class="form-label">Date Of Issue</label>
+            <input type="text" class="form-control" id="date" placeholder="DD-MM-YYYY">
+          </div>
+          <button id="submitBtn" type="submit" class="btn btn-primary">Submit</button>
+        </div>
+      </form>
+    </div>
+    <hr>
+  </div>
+
+  <!--Read Books Table-->
+  <div class="tableContainer">
+    <div class="titleHeading">
+      <h1>YOUR BOOKS</h1>
+    </div>
+    <table id="dataTable" class="table book-list">
+      <div class="formContainer">
+        <tr>
+          <th scope="col">S.NO</th>
+          <th scope="col">Title</th>
+          <th scope="col">Author</th>
+          <th scope="col">Issued By</th>
+          <th scope="col">Price</th>
+          <th scope="col">Date Of Issue</th>
+          <th scope="col">Edit</th>
+      </div>
+      </tr>
+      <tbody id="innerBody">
+      </tbody>
+    </table>
+  </div>
+
+  <!--Update Delete Table-->
+  <div class="update-delete-form">
+    <div class="titleHeading">
+      <h2>UPDATE/DELETE BOOKS</h2>
+    </div>
+    <form id="update-delete-form">
+      <div class="formContainer">
+        <input type="hidden" id="book-id">
+        <input type="text" id="new-title" placeholder="New Title">
+        <input type="text" id="new-author" placeholder="New Author">
+        <input type="text" id="new-name" placeholder="new-name">
+        <input type="text" id="new-price" placeholder="new-price">
+        <input type="text" id="new-date" placeholder="new-date">
+
+        <button type="button" id="update-book" class="btn btn-warning">Update</button>
+        <button type="button" id="delete-book" class="btn btn-danger">Delete</button>
+      </div>
+    </form>
+  </div>
+
+  <!-- Popper and JS Tags-->
+  <script src="index.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+    integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="styles.css">
+</body>
+
+</html>
